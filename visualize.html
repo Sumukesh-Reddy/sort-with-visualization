@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize</title>
+    <link rel="stylesheet" href="sort.css">
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <a href="index.html">
+                <img src="school.jpg" id="photo" alt="School Logo">
+            </a>
+        </div>
+        <nav class="leftside">
+            <div class="menu-item"><a href="index.html">Learn</a></div>
+            <div class="menu-item"><a href="solve.html">Solve</a></div>
+            <div class="menu-item"><a href="visualize.html">Visualize</a></div>
+            <div class="menu-item"><button id="tog">Dark Mode</button></div>
+        </nav>
+    </header>
+    <h1 id="heading-visualize">Sorting Algorithms Visualization</h1>
+        <div class="visualize-box">
+            <label class="selectsize" for="size">Select Size</label><br>
+            <input type="range" min="2" max="20" id="size" oninput="updateSizeDisplay(this.value)">
+            <p><span id="sizeValue"></span></p>                
+        </div>
+        <h1 id="typeofsorting"></h1>
+        <div id="array"></div>
+        <div id="algorithm-selection">
+            <button class="algorithm-box" id="insertion">Insertion Sort</button>
+            <button class="algorithm-box" id="selection">Selection Sort</button>
+            <button class="algorithm-box" id="merge">Merge Sort</button>
+            <button class="algorithm-box" id="quick">Quick Sort</button>
+        </div>
+
+        <button id="visualizeBtn">Visualize</button>
+        <div id="visualization-area"></div>
+
+        <!-- binery search -->
+        <!-- <h1 id="heading-visualize">Bineary Search Visualization</h1>
+        <div class="visualize-box">
+            <label class="selectsize" for="bin-size">Select Size</label><br>
+            <input type="range" min="2" max="20" id="bin-size" oninput="updateBinSizeDisplay(this.value)">
+            <p><span id="sizeValuebineary"></span></p>  
+            <br>
+            </div>
+            <h2 id="bin-h2">Enter the number to search:</h2><br>
+            <input id="search-number" type="number" placeholder="number">
+        <button id="bin-search">Search</button> -->
+
+    <footer class="footer">
+        <p>&copy; 2025 All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>
+            <a href="https://www.linkedin.com/in/sumukesh-reddy-mopuram/" class="fa fa-linkedin">LinkedIn</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/Sumukesh-Reddy" class="fa fa-github">GitHub</a>
+        </p>
+    </footer>
+    <script src="sort.js"></script>
+</body>
+</html>
