@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bineary Search</title>
+    <link rel="stylesheet" href="sort.css">
+</head>
+<body class="body1">
+    <!--header-->
+    <div class="head">
+        <div class="logo">
+            <a href="index.html">
+                <img src="school.jpg" id="photo" alt="School Logo">
+            </a>
+        </div>
+        <div class="leftside">
+            <div class="menu-item"><a href="index.html">Learn</a></div>
+            <div class="menu-item"><a href="solve.html">Solve</a></div>
+            <div class="menu-item"><a href="visualize.html">Visualize</a></div>
+            
+        </div>
+    </div>
+<!--ended -->
+<div class="content" style="display: flex;">
+    <p id="heading">Bineary Search</p>
+    <br><br>
+    <p id="para">Binary Search is a highly efficient searching algorithm that is used to find the position of a target value within a sorted array. It works by repeatedly dividing the search interval in half. Binary search is much faster than linear search, especially for large datasets, because it reduces the search space by half with each comparison.
+        <br> <br>
+        How Binary Search Works:
+        <br> <br>
+        Initial Setup:
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start with two pointers or indices: low (start of the array) and high (end of the array).
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find the Middle Element:
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculate the middle index of the array:
+        mid=(low+high)/2
+        <br>Compare the Middle Element with the target value:
+        <br>If the middle element equals the target, return the index of the middle element.
+        <br>If the target is smaller than the middle element, search the left half of the array by setting high = mid - 1.
+        <br>If the target is larger than the middle element, search the right half by setting low = mid + 1.
+        <br>Repeat:
+        <br>Continue narrowing the search to the left or right half and recalculating the middle until the target is found or the search interval becomes empty (i.e., low > high).
+       <br><br><br><br><br><br><br><br>
+</div>
+<footer class="footer">
+    <p>&copy; 2025 Your Website. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    <p><a href="https://www.linkedin.com/in/sumukesh-reddy-mopuram/" class="fa fa-linkedin">LinkedIn&nbsp; &nbsp; &nbsp; </a>
+    <a href="https://github.com/Sumukesh-Reddy" class="fa fa-github">GitHub</a></p>
+</footer>
+
+</body>
+</html>
