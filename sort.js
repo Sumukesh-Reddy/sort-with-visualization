@@ -1,4 +1,4 @@
-alert("Open in Computer");
+
 const togglebutton = document.getElementById('tog');
 var theme = localStorage.getItem('theme') || "dark";  
 function applyTheme() {
